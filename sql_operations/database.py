@@ -13,7 +13,7 @@ DB_USER = getenv("DB_USER")
 DB_PASSWORD = getenv("DB_PASSWORD")
 DB_NAME = getenv("DB_NAME")
 
-SQLALCHEMY_DATABASE_URL = f"mysql:://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
+SQLALCHEMY_DATABASE_URL = f"mysql+pymysql://{DB_USER}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
 
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL, # connect_args={"check_same_thread": False}
