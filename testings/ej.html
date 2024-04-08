@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumo APIs</title>
+    <script src="ej.js"></script>
+</head>
+<body>
+    <h1>Test de consumo de APIs</h1>
+    <div id="apiRes">
+
+    </div>
+    <script>
+        //consumeGet("https://random.dog/woof.json");
+        consumePost("http://localhost:8000/users/", {
+            email: "juanito@gmail.com",
+            password: "root"
+        })
+    </script>
+</body>
+</html>
